@@ -1,0 +1,73 @@
+/*****************************************************************************
+@doc            INT EXT
+******************************************************************************
+* $ProjectName:  $
+* $ProjectRevision:  $
+*-----------------------------------------------------------------------------
+* $Source: z:/pr/cmsync/sw/dftst/rcs/dftstn.rc $
+* $Revision: 2 $
+*-----------------------------------------------------------------------------
+* $Author: tb $
+*-----------------------------------------------------------------------------
+* History:
+* $Log: dftstn.rc $
+* Revision 1.3  2006/02/16 12:21:30  TBruendl
+* No comment given
+*
+* Revision 1.2  2004/03/10 13:40:59  TBruendl
+* No comment given
+*
+* Revision 1.1  2004/03/09 08:24:58  MPetkov
+* No comment given
+*
+* Revision 1.3  2001/01/26 12:41:10  TBruendl
+* No comment given
+*
+* Revision 1.2  2001/01/05 14:41:16  TBruendl
+* No comment given
+*
+* Revision 1.1  2000/11/06 06:57:15  TBruendl
+* No comment given
+*
+*
+*-----------------------------------------------------------------------------
+* Copyright (c) 2000 - 2006  OMNIKEY
+******************************************************************************/
+
+/*****************************************************************************/
+/** GLOBAL INCLUDES                                                         **/
+/*****************************************************************************/
+
+#include <ver.h>
+
+/*===========================================================================*/
+/* version information                                                       */
+/*===========================================================================*/
+
+VS_VERSION_INFO VERSIONINFO
+
+   FILEVERSION	 1, 0, 0, 2
+   PRODUCTVERSION	 1, 0, 0, 2
+   FILEFLAGSMASK	0x3F
+   FILEFLAGS	0
+   FILEOS          VOS_NT_WINDOWS32
+   FILETYPE        VFT_APP
+   {
+   BLOCK "StringFileInfo"
+      {
+      BLOCK "040904E4"             // program information international
+         {
+	VALUE "CompanyName",	"OMNIKEY\0"
+         VALUE "ProductName",      "Tools\0"
+         VALUE "FileDescription",  "Test program for synchronous library\0"
+	VALUE "FileVersion",	"1.0.0.2\0"
+	VALUE "ProductVersion",	"1.0.0.2\0"
+         VALUE "OriginalFilename", "DFTSTN.EXE\0"
+         VALUE "InternalName",     "DFTSTN\0"
+	VALUE "LegalCopyright",	"Copyright © 2000 - 2006 OMNIKEY\0"
+         }
+      }
+   }
+
+1  ICON    DISCARDABLE     "OMNIKEY.ICO"
+

@@ -1,0 +1,509 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ContactlessDemoVC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\omnikey.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SECTORTRAILER DIALOGEX 0, 0, 369, 115
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sector Trailer"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,312,94,50,14
+    PUSHBUTTON      "No",IDCANCEL,7,94,50,14
+    CTEXT           "The selected block is a sector trailer, wrong data writing her could make permanent unuseable of the sector. Please be sure your key and access option are correct",
+                    IDC_STATIC,27,12,318,34,SS_SUNKEN | WS_BORDER
+    CTEXT           "Are you sure the data is correct, and really want to write  ?",
+                    IDC_STATIC,40,60,269,21,SS_CENTERIMAGE | SS_SUNKEN,
+                    WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SECTORTRAILER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\Omnikeysmart.bmp"
+IDB_LEDS                BITMAP  DISCARDABLE     "res\\leds.bmp"
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Englisch (USA) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ContactlessDemoVC"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "ContactlessDemoVC Version 1.1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004-2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CONTACTLESSDEMOVC_DIALOG DIALOGEX 0, 0, 442, 336
+STYLE DS_MODALFRAME | DS_CONTEXTHELP | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Omnikey CardMan 5121 Contact-Less Demo Application Programming"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,374,262,60,18
+    LISTBOX         IDC_LISTREADER,7,17,104,31,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    ICON            IDR_MAINFRAME,IDC_STATIC,344,262,20,20
+    CTEXT           "ATR",IDC_STATIC,10,70,186,8
+    CTEXT           "UID",IDC_STATIC,205,70,106,8
+    CTEXT           "Card Name",IDC_STATIC,321,70,112,9
+    GROUPBOX        "Reader Related Function",IDC_STATIC,116,8,320,41,
+                    BS_CENTER
+    LISTBOX         IDC_LISTOUTPUT,7,283,429,50,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Refresh Output Screen",IDC_REFOUTPUTSC,8,262,85,18
+    GROUPBOX        "Mifare Functions using Sync API ",IDC_STATIC,7,80,429,
+                    118,BS_CENTER | BS_FLAT
+    PUSHBUTTON      "Authenticate",IDC_MIFAUTHENT,8,95,50,28
+    EDITTEXT        IDC_AUTHENTBLOCKNR,63,98,32,12,ES_AUTOHSCROLL
+    GROUPBOX        "Access Option",IDC_STATIC,101,91,160,36,BS_CENTER
+    CTEXT           "Block Nr",IDC_STATIC,62,116,36,8
+    EDITTEXT        IDC_AUTHENTKEY,171,111,87,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    GROUPBOX        "Authentication Mode",IDC_STATIC,265,91,91,36,BS_CENTER
+    CONTROL         "Mode A",IDC_MODEA,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,272,103,38,14
+    CONTROL         "Mode B",IDC_MODEB,"Button",BS_AUTORADIOBUTTON,313,103,
+                    38,13
+    CONTROL         "Key Number ",IDC_ACCESSOPTIONKEYNR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,111,100,52,8
+    CONTROL         "6-byte Key",IDC_ACCESSOPTIONKEY,"Button",
+                    BS_AUTORADIOBUTTON,170,100,84,11
+    COMBOBOX        IDC_MIFAUTHENTKEYNR,113,111,36,101,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Read",IDC_READ,8,136,50,15
+    EDITTEXT        IDC_DATAREAD,61,138,155,13,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Write",IDC_WRITE,220,137,39,14
+    EDITTEXT        IDC_DATATOWRITE,264,138,163,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CTEXT           "Data Read ",IDC_STATIC,65,151,170,8
+    CTEXT           "Data to Write (16 bytes hex)",IDC_STATIC,260,152,136,9
+    PUSHBUTTON      "Increment",IDC_INCREMENT,7,162,52,17
+    EDITTEXT        IDC_INCREMENTVAL,78,165,67,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CTEXT           "by",IDC_STATIC,61,167,15,13
+    PUSHBUTTON      "Decrement",IDC_DECREMENT,160,162,51,16
+    EDITTEXT        IDC_DECREMENTVAL,226,164,70,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CTEXT           "by",IDC_STATIC,211,166,14,13
+    CTEXT           "Value (4 bytes hex)",IDC_STATIC,76,178,70,9
+    CTEXT           "Value (4 bytes hex)",IDC_STATIC,224,178,74,9
+    LISTBOX         IDC_ATRLIST,7,53,188,14,LBS_NOINTEGRALHEIGHT | 
+                    WS_TABSTOP,WS_EX_DLGMODALFRAME
+    LISTBOX         IDC_UIDLIST,203,53,110,14,LBS_NOINTEGRALHEIGHT | 
+                    WS_TABSTOP,WS_EX_DLGMODALFRAME
+    LISTBOX         IDC_CARDNAMELIST,321,53,113,14,LBS_NOINTEGRALHEIGHT | 
+                    WS_TABSTOP,WS_EX_DLGMODALFRAME
+    CONTROL         "",IDC_LEDSUCCESS,"Static",SS_BLACKFRAME,193,269,12,10
+    LTEXT           "Success",IDC_STATIC,212,269,28,10
+    CONTROL         "",IDC_LEDERROR,"Static",SS_BLACKFRAME,277,269,11,10
+    LTEXT           "Error",IDC_STATIC,297,269,28,9
+    GROUPBOX        "Last Operation Status",IDC_STATIC,184,259,145,22,
+                    BS_CENTER
+    CTEXT           "Connected Readers",IDC_STATIC,9,5,107,10,NOT WS_GROUP
+    GROUPBOX        "ISO 7816  /  iCLASS  /  PCSC 2.01  - APDUs",IDC_STATIC,
+                    7,202,429,56,BS_CENTER | BS_FLAT
+    PUSHBUTTON      "Transmit",IDC_TRANSMIT,8,212,49,44
+    EDITTEXT        IDC_NBYTESEND,60,212,34,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    CTEXT           "# byte ",IDC_STATIC,57,225,36,8
+    EDITTEXT        IDC_BYTESEND,99,212,337,19,ES_MULTILINE | ES_UPPERCASE | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_BYTERECEIVED,99,235,337,19,ES_CENTER | ES_MULTILINE | 
+                    ES_UPPERCASE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+    EDITTEXT        IDC_NBYTERECEIVED,58,236,35,12,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CTEXT           "# byte",IDC_STATIC,58,248,37,8
+    PUSHBUTTON      "Write Mifare Key To Reader",IDC_WRITEMIFKEY,121,18,46,
+                    27,BS_CENTER | BS_VCENTER | BS_MULTILINE
+    COMBOBOX        IDC_MIFKEYTOREADERNR,171,31,36,101,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Key Nr.",IDC_STATIC,173,18,32,10
+    GROUPBOX        "Tr. Option",IDC_MIFKEYTROPTION,217,18,74,27,BS_CENTER
+    CONTROL         "Plain",IDC_MIFKEYTRAOPTIONPL,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,220,30,30,10
+    CONTROL         "Secured",IDC_MIFKEYTRAOPTIONSE,"Button",
+                    BS_AUTORADIOBUTTON,251,30,38,10
+    COMBOBOX        IDC_MIFENKEYNR,296,31,36,101,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CTEXT           "En. Key Nr.",IDC_STATIC,292,21,43,10
+    EDITTEXT        IDC_MIFKEYTOREADER,341,29,93,14,ES_CENTER | ES_UPPERCASE
+    CTEXT           "Key (A0A1...) ",IDC_STATIC,343,18,89,10
+    PUSHBUTTON      "Read complete card and show performance",
+                    IDC_COMPLETEREAD,370,94,62,32,BS_MULTILINE | WS_DISABLED
+    PUSHBUTTON      "Write complete card and show performance",
+                    IDC_COMPLETEWRITE,371,163,62,32,BS_MULTILINE | 
+                    WS_DISABLED
+    PUSHBUTTON      "Mifare Emulation",IDC_MIFARE_EMU,98,262,80,18
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CONTACTLESSDEMOVC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 436
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 333
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,0
+ PRODUCTVERSION 1,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Omnikey GmbH\0"
+            VALUE "FileDescription", "ContactlessDemoVC MFC Application\0"
+            VALUE "FileVersion", "1, 1, 0, 0\0"
+            VALUE "InternalName", "ContactlessDemoVC\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004-2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ContactlessDemoVC.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ContactlessDemoVC Application\0"
+            VALUE "ProductVersion", "1, 1, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CONTACTLESSDEMOVC_DIALOG DLGINIT
+BEGIN
+    IDC_MIFAUTHENTKEYNR, 0x403, 4, 0
+0x3030, 0x0020, 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x4130, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x4230, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x4330, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x4430, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x4530, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x4630, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x4131, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x4231, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x4331, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x4431, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x4531, "\000" 
+    IDC_MIFAUTHENTKEYNR, 0x403, 3, 0
+0x4631, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 4, 0
+0x3030, 0x0020, 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x4130, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x4230, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x4330, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x4430, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x4530, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x4630, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x4131, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x4231, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x4331, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x4431, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x4531, "\000" 
+    IDC_MIFKEYTOREADERNR, 0x403, 3, 0
+0x4631, "\000" 
+    IDC_MIFENKEYNR, 0x403, 3, 0
+0x3038, "\000" 
+    IDC_MIFENKEYNR, 0x403, 3, 0
+0x3138, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About ContactlessDemoVC..."
+    IDS_MIFARE_EMU_ON       "Mifare Emulation On"
+    IDS_MIFARE_EMU_OFF      "Mifare Emulation Off"
+END
+
+#endif    // Englisch (USA) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ContactlessDemoVC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
